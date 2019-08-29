@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2º SERCOMP - UEPB</title>
+    <meta name="keywords"
+        content="Computação, Inovação, Pesquisa em Computação, Computação contextualizada, Congresso, Paraiba, Patos-PB" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <link rel="icon" href="image/icons/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Css files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+
+</head>
+
+<body class="bg-white">
+    <div class="shadow-sm bg-laranja">
+        <div class="">
+            <div class="logo px-3 py-2">
+                <div class="d-flex justify-content-center">
+                    <img src="Image/logo-azul.png" alt="logo sercomp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white pl-5 pr-5 pb-5 pt-3">
+        <div class="container">
+            <form class="">
+                <div class="borda align-self-center">
+                    <% if(erro.length > 0) { %>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-danger p-1">
+                                <ul class="m-0">
+
+                                    <li class="m-0"><%=erro%></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+
+                <div class="form-group  mb-1">
+                    <label for="name">Participante 1:</label>
+                    <input type="email" id="p1" name="p1" disabled placeholder="Email inscrito" class="form-control">
+                </div>
+                <div class="form-group  mb-1">
+                    <label for="name">Participante 2:</label>
+                    <input type="email" id="p2" name="p2" required placeholder="Email inscrito" class="form-control">
+                </div>
+                <div class="form-group  mb-1">
+                    <label for="name">Participante 3:</label>
+                    <input type="email" id="p3" name="p3" placeholder="Email inscrito" class="form-control">
+                </div>
+                <div class="form-group  mb-1">
+                    <label for="name">Participante 4:</label>
+                    <input type="email" id="p4" name="p4" placeholder="Email inscrito" class="form-control">
+                </div>
+
+                <div class="pt-3">
+                    <button type="button" class="btn btn-danger"><a href="/home"
+                            style="color: azure">Cancelar</a></button>
+                    <button formmethod="POST" formaction="/cadhackday" type="submit"
+                        class="btn btn-success">Cadastrar</button>
+                </div>
+
+
+            </form>
+        </div>
+        <nav class="nav-bottom navbar fixed-bottom" style="background-color: #220664; color: white;">
+            <div class="d-flex justify-content-around" style="width: 100%">
+                <a class="btn text-branco" style="color: white" href="/home">
+                    <i class="fas fa-home fa-fw"></i>
+                </a>
+                <a class="btn rounded-circle" style="color: white" href="/agenda">
+                    <i class="fas fa-book fa-fw"></i>
+                </a>
+                <a class="btn text-branco" style="color: white" href="/perfil">
+                    <i class="fas fa-user fa-fw"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+</body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/hack.js"></script>
+<script src="js/app.js"></script>
+
+</html>

@@ -1,0 +1,10 @@
+module.exports = {
+    authSecret: '648c4b84114609edf619be0de4e27fad',
+    db: {
+        host : 'localhost',
+        port: 3306,
+        database: 'sercomp2019',
+        user: 'root',
+        password: '9105'
+    }
+}

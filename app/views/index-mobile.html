@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2º SERCOMP - UEPB</title>
+    <meta name="keywords"
+        content="Computação, Inovação, Pesquisa em Computação, Computação contextualizada, Congresso, Paraiba, Patos-PB" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <link rel="icon" href="image/icons/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Css files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app-mobile.css" />
+
+</head>
+
+
+<body class="">
+
+    <!--NAVEGAÇÂO-->
+    <div id="myNav" class="overlay bg-white">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="w-100 text-white">
+                <div class="nav-item text-white">
+                    <a class="nav-link active text-azul" href="/index">
+                        <img class="img-fluid mr-2" src="image/icons/home.svg">
+                        Inicio
+                    </a>
+                </div>
+                <div class="nav-item text-white">
+                    <a class="nav-link text-azul" href="/cadastrar">
+                        <img class="img-fluid mr-2" src="image/icons/anexar.svg">
+                        inscrição
+                    </a>
+                </div>
+                <div class="nav-item text-white">
+                    <a class="nav-link text-azul" href="/submissao">
+                        <img class="img-fluid mr-2" src="image/icons/anexar.svg">
+                        Submissão de artigos
+                    </a>
+                </div>
+                <div class="nav-item text-white">
+                    <a class="nav-link text-azul" href="/hackday">
+                        <img class="img-fluid mr-2" src="image/icons/hackday.svg">
+                        Hackday
+                    </a>
+                </div>
+                <div class="nav-item text-white">
+                    <a class="nav-link text-azul" href="index#contato" onclick="closeNav()">
+                        <img class="img-fluid mr-2" src="image/icons/contato.svg">
+                        Contatos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="menu" class="btn bg-light float-left" onclick="openNav()">
+            <img src="image/icons/menu.svg">
+        </button>
+    </div>
+
+
+    <!-- Header -->
+    <div class="header d-flex flex-column justify-content-center align-itens-center">
+
+        <!-- Detalhes acima titulo -->
+        <div class="header-detalhes d-flex flex-column">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="mb-4 ml-5 d-flex justify-content-center align-itens-center" style="flex-basis: 80%;">
+                    <img src="image/details/nuvem1.png" class="" style="width: 60px; height: 30px" alt="nuvem">
+                </div>
+                <div class="mt-3 mr-5 d-flex justify-content-center" style="flex-basis: 20%;">
+                    <img src="image/details/estrela.png" class="" style="width: 15px; height: 15px" alt="estrela">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-itens-center">
+                <img src="image/details/lua.png" class="" style="width: 50px; height: 50px" alt="lua">
+            </div>
+
+            <div class="d-flex flex-row justify-content-between">
+                <img src="image/details/estrela.png" class="ml-3" style="width: 20px; height: 20px" alt="estrela">
+                <img src="image/details/estrela2.png" class="mt-2" style="width: 18px; height: 18px" alt="estrela">
+            </div>
+        </div>
+
+        <!-- Titulo do site -->
+        <div class="header-titulo d-flex flex-column justify-content-center align-itens-center ">
+            <img src="image/simbolo.png" class="titulo-site" alt="Logo Sercomp">
+            <img src="image/typografia.png" class="titulo-site" alt="Título Sercomp">
+        </div>
+
+        <!-- Detalhes abaixo titulo -->
+        <div class="header-detalhes d-flex flex-column justify-content-center align-itens-center">
+
+            <div class="d-flex flex-row justify-content-between">
+                <img src="image/details/estrela.png" class="mt-2 ml-1 " style="width: 18px; height: 18px" alt="estrela">
+                <img src="image/details/estrela2.png" class="mr-4 " style="width: 20px; height: 20px" alt="estrela">
+            </div>
+
+            <div class="d-flex flex-row justify-content-between ">
+                <div class="mt-4 ml-5 d-flex justify-content-center " style="flex-basis: 30%;">
+                    <img src="image/details/estrela.png" class="" style="width: 15px; height: 15px" alt="estrela">
+                </div>
+                <div class="mt-2 mb-4 mr-4 d-flex justify-content-center align-itens-center" style="flex-basis: 70%;">
+                    <img src="image/details/nuvem1.png" class="" style="width: 60px; height: 30px" alt="nuvem">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-itens-center">
+                <img src="image/details/estrela2.png" class="mt-2 estrela-problematica"
+                    style="width: 30px; height: 30px" alt="estrela">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Conteúdo -->
+    <div id="conteudo">
+
+        <!-- Tema Evento -->
+        <section class="tema bg-white" id="sobre">
+            <div class="container">
+                <div class="tittle-section text-azul">
+                    <h2 class="font-personalizada"><strong>Tema</strong></h2>
+                </div>
+                <div class="text-dark ">
+                    <h4 class="text-dark"><strong>A computação na perspectiva da complexidade, diversidade e inclusão
+                            nos dias atuais</strong></h4>
+                    <p><small>
+                            O SERCOMP – Congresso Sertanejo de Computação - nesta II edição abordará o tema: “A
+                            Computação na perspectiva da complexidade, diversidade e inclusão nos dias atuais”. Tal tema
+                            surge com o objetivo de colocar em prática soluções computacionais em relação aos problemas
+                            enfrentados pela sociedade em geral, respeitando a multiplicidade da mesma.
+                        </small></p>
+                    <p><small>
+                            A proposta é reunir estudantes de graduação e curso técnico, professores e pesquisadores
+                            interessados em desenvolver aplicações tecnológicas para o sertão paraibano, com minicursos,
+                            palestras, Hackday e apresentação de trabalhos científicos.
+
+                        </small></p>
+                </div>
+            </div>
+        </section>
+        <!-- Submissão -->
+        <section class="tema bg-laranja" id="submissao">
+            <div class="container">
+                <div class="tittle-section p-0 text-azul">
+                    <h2 class="font-personalizada"><strong>Submissão de artigos</strong></h2>
+                </div>
+                <div class=" text-dark pb-4">
+                    <a href="/submissao" type="button" class="btn btn-light float-right"><strong
+                            class=" tittle-section font-personalizada">Saiba mais aqui!</strong></a>
+                </div>
+            </div>
+        </section>
+        <!-- Submissão -->
+        <section class="tema " id="hackaton">
+            <div class="container">
+                <div class="tittle-section p-0 text-laranja">
+                    <h2 class="font-personalizada"><strong>HACKDAY</strong></h2>
+                </div>
+                <div class=" text-dark pb-4">
+                    <a href="/hackday" type="button" class="btn btn-light float-right"><strong
+                            class=" tittle-section font-personalizada">Saiba mais aqui!</strong></a>
+                </div>
+            </div>
+        </section>
+        <!-- Submissão -->
+        <section class="tema bg-laranja  ">
+            <div class="container">
+                <div class="tittle-section p-0 text-azul">
+                    <h2 class="font-personalizada"><strong>SERCOMP 2018</strong></h2>
+                    
+                </div>
+                <div class=" text-dark pb-4">
+                    <a href="http://sercomp.online/2018" type="button" class="btn btn-light float-right"><strong
+                            class=" tittle-section font-personalizada">Veja aqui!</strong></a>
+                </div>
+            </div>
+        </section>
+        <!-- Submissão -->
+        <section class="tema ">
+            <div class="container">
+                <div class="tittle-section p-0 text-laranja">
+                    <h2 class="font-personalizada"><strong>Inscrições</strong></h2>
+                    <h3 class="font-personalizada"><strong>Valor: $50,00</strong></h3>
+                </div>
+                <div class=" text-dark pb-5 mb-4">
+                    <a href="/login" type="button" class="btn btn-warning float-right mb-3"><strong
+                            class=" tittle-section font-personalizada">Faça Login!</strong></a>
+                    <a href="/cadastrar" type="button" class="btn btn-light float-right mb-3"><strong
+                            class=" tittle-section font-personalizada">Faça sua inscrição!</strong></a>
+                </div>
+            </div>
+        </section>
+        <section class="info-contato bg-laranja" id="contato">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 contato">
+                        <div class="tittle-section text-center">
+                            <span class="d-flex align-itens-center justify-content-center">
+                                <img class="my-auto mr-2" src="image/icons/contato.svg" height="30px"
+                                    style="filter: invert(100%)">
+                                <h3 class="my-auto text-white font-personalizada"><strong class="">Contato</strong></h3>
+                            </span>
+                        </div>
+                        <div class=" shadow rounded bg-white text-center p-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img class="my-auto mr-2" src="image/icons/email.svg" height="35px">
+                                    <h5>Pode ser por email?</h5>
+                                    <a class="my-auto" href="#">
+                                        <h6>sercompeupb@gmail.com</h6>
+                                    </a>
+                                    <br>
+                                </div>
+                                <div class="col-12">
+                                    <img class="my-auto mr-2" src="image/icons/instagram.svg" height="30px">
+                                    <h5>ou prefere mandar um direct?</h5>
+                                    <a class="my-auto" href="https://www.instagram.com/sercomppb/">
+                                        <h6>Vem de direct!</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 local">
+                        <div class="tittle-section ">
+                            <span class="d-flex align-itens-center justify-content-center">
+                                <img class="my-auto mr-2" src="image/icons/lugar.svg" height="30px"
+                                    style="filter: invert(100%)">
+                                <h3 class="my-auto text-white font-personalizada"><strong class="">Local</strong></h3>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5600.12628974348!2d-37.26391612846536!3d-7.022534608376401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7af6052075b23c5%3A0xe15d227349b86bd4!2sUEPB+-+Campus+VII!5e0!3m2!1spt-BR!2sbr!4v1537636678307"
+                                    width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Programação-->
+        <section class="programacao text-center">
+
+            <div class="container">
+                <div class="tittle-section text-white mb-3">
+                    <span class="">
+
+                        <h2 class="font-personalizada"> <img src="image/icons/programacao.svg" height="50px"
+                                class="pr-3" style="filter: invert(100%)"><strong>Programação</strong></h2>
+                    </span>
+                </div>
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-4 col-xl-4 text-white">
+                        <ul>
+                            <li class="mb-4">
+                                <h3><Strong class="text-couro">Dia 18/09</Strong></h3>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">18:00 às 19:00</strong>
+                                <h6>Credenciamento</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">19:00 às 19:00</strong>
+                                <h6>Abertura</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">19:15 às 20:45</strong>
+                                <h6>Palestra I</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">20:45 às 22:00</strong>
+                                <h6>Coffee Break</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xl-4 text-white">
+                        <ul>
+                            <li class="mb-4">
+                                <h3><Strong class="text-couro">Dia 19/09</Strong></h3>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">7:00 às 8:00</strong>
+                                <h6>Credenciamento</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">8:00 às 9:30</strong>
+                                <h6>Palestra II</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">9:30 às 10:00</strong>
+                                <h6>Coffee Break</h6>
+                                <p><small>(Sorteio do tema do HackDay)</small></p>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">10:00 ás 12:00</strong>
+                                <h6>Minicursos</h6>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">(12:00 ÀS 13:30)</strong>
+                                <h5><Strong>INTERVALO</Strong></h5>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">13:30 às 15:30</strong>
+                                <h6>Oficinas</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">15:30 às 16:30</strong>
+                                <h6>Apresentação de Artigos</h6>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">(16:30 ÀS 17:00)</strong>
+                                <h5><Strong>INTERVALO</Strong></h5>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">17:00</strong>
+                                <h6>HACKDAY</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">19:00 às 21:00</strong>
+                                <h6>Minicursos</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xl-4 text-white">
+                        <ul>
+                            <li class="mb-4">
+                                <h3><Strong class="text-couro">Dia 20/09</Strong></h3>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">8:00 às 10:00</strong>
+                                <h6>Feira Tecnológica</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">10:00 às 11:30</strong>
+                                <h6>Mesa Redonda</h6>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">(12:00 ÀS 13:30)</strong>
+                                <h5><Strong>INTERVALO</Strong></h5>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">13:30 às 16:00</strong>
+                                <h6>Momento Feminino</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">17:00</strong>
+                                <h6>Encerramento do Hackday</h6>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">(17:00 ÀS 18:00)</strong>
+                                <h5><Strong>INTERVALO</Strong></h5>
+                            </li>
+
+                            <li class="mb-3">
+                                <strong class="mr-2">18:00 às 19:00</strong>
+                                <h6>Apresentação do Hackday</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">19:00 às 19:15</strong>
+                                <h6>Premiação dos Artigos</h6>
+                            </li>
+                            <li class="mb-3">
+                                <strong class="mr-2">19:15 às 19:30</strong>
+                                <h6>Premiação Hackday</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="justify-content-center text-center pt-2">
+        <div class="container">
+            <span class="pb-1 row justify-content-center text-center">
+                <p><img src="image/icons/devloops-icone.png" class="m-0 p-0" width="50px"></p>
+            </span>
+            <div class="row justify-content-center text-center" class="pl-3">
+                <span>
+                    <p><small class="text-white p-5">SERCOMP 2019 &copy;</small></p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!-- Js scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/app-scripts.js"></script>
+<script src="js/app-scripts-mobile.js"></script>
+
+</html>

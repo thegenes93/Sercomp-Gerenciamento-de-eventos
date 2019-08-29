@@ -1,0 +1,222 @@
+
+
+.bg-white{ background-color: white; }
+.bg-laranja{ background-color: #d4a000; }
+.bg-azul{ background-color: #220664; }
+.bg-amarelo{ 
+    background-image: url("../image/textura-amarela.png");
+    background-color: #d4a000;
+
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.text-white{ color: white; }
+.text-laranja{ color: #d4a000; }
+.text-azul{ color: #220664; }
+
+@font-face {
+   font-family: myFirstFont;
+   /* src: url("../eldes_cordel_1_lite.ttf"); */
+   src: url("../font/cordelina.otf");
+}
+
+.font-personalizada {
+   font-family: myFirstFont;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url("../image/background.jpg"); */
+    /* background-color: #220664; */
+}
+
+ul{
+    list-style-type: none;
+}
+
+.circuito{
+    width: 30%;
+    position: absolute;
+}
+
+
+/* Navbar */
+
+#menu {
+    position: fixed;
+    z-index: 103;
+    width: 50px;
+    top: 30px;
+    right: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow:0px 10px 30px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:0px 10px 30px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:0px 10px 30px 0px rgba(50, 50, 50, 0.35);
+}
+
+#fechar {
+    float: right;
+    position: fixed;
+    z-index: 104;
+    top: 30px;
+    right: 30px;
+}
+
+/* Fim Navbar */
+
+
+
+/* Header */
+
+.header{
+    background-image: url("../image/circuitos.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-titulo{
+    margin-left: auto; 
+    margin-right: auto;
+    /* flex-direction: column; */
+    /* display: flex;  */
+    /* flex-flow: column wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.header-detalhes{
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .titulo-site{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .titulo-site{
+        width: 450px;
+    }
+    .estrela-problematica{
+        display:none;
+    }
+}
+
+/* Fim Header */
+
+
+
+/* Sections */
+
+.tittle-section{
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+
+}
+.tema {
+    padding: 40px 20px;
+}
+
+    /* datas e noticias */
+    .informacoes{
+        padding: 40px 20px;
+    }
+
+    .informacoes ul li{
+        padding: 10px 20px;
+    }
+    .informacoes ul li a{
+        text-decoration: none;
+        color: #292b2c;
+    }
+    .info-header{
+        padding: 15px 15px 15px 15px;
+        letter-spacing: 3px;
+    }
+    /* Fim datas e noticias */
+
+    /* contatos */
+    .info-contato{
+        padding: 40px 20px;
+    }
+    .contato{
+        padding: 10px;
+    }
+    .local{
+        padding: 10px;
+    }
+    /* Fim contatos */
+
+.programacao {
+    padding: 40px 20px;
+}
+.programacao ul{
+    padding: 0px;
+}
+
+/* Fim Sections */
+
+
+
+
+/* Nav */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0); */
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+} 
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #292b2c;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+/* Fim Nav */

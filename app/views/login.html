@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - SERCOMP 2019</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+    <div class="pagina container d-flex justify-content-center align-itens-center" height="100%">
+        <div class="tel-login" style="max-width: 500px;">
+            <div class="row m-3 p-auto bg-white">
+                <div class="container w-75">
+                    <img class="img-fluid mx-auto" src="image/simbolo2.png" alt="">
+                    <img class="img-fluid mx-auto" src="image/typografia2.png" alt="">
+
+                </div>
+                <div class="container my-2">
+                    <div class="borda align-self-center">
+                        <% if(erro.length > 0) { %>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger">
+
+                                    <ul>
+
+                                        <li><%=erro%></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Password">
+                            <small id="emailHelp" class="form-text text-muted">Não compartilhe sua senha com outras
+                                pessoas</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Lembrar senha</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" formaction="login"
+                            formmethod="POST">Entrar</button>
+                    </form>
+                    <div class="pt-3">
+                        É novo aqui? <a href="cadastrar"><strong>Crie sua conta</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("pagina").css('height', $(window).height())
+    });
+</script>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</html>

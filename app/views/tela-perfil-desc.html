@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2º SERCOMP - UEPB</title>
+    <meta name="keywords"
+        content="Computação, Inovação, Pesquisa em Computação, Computação contextualizada, Congresso, Paraiba, Patos-PB" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <link rel="icon" href="image/icons/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Css files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" /> -->
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            /* src: url("../eldes_cordel_1_lite.ttf"); */
+            src: url("../font/cordelina.otf");
+        }
+
+        .font-personalizada {
+            font-family: myFirstFont;
+        }
+
+
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #220664;
+            color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #pagina {
+            transition: margin-left .5s;
+            margin-left: 250px;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-white">
+
+    <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="d-flex justify-content-center py-4">
+            <img src="image/logo-azul.png" style="filter: invert(100%);" alt="logo sercomp">
+        </div>
+        <a href="/home-pc" class="d-flex">
+            <i class="my-auto fas fa-home fa-fw"></i>
+            <span class="my-auto ml-2">
+                Home
+            </span>
+        </a>
+        <a href="/agenda-pc" class="d-flex">
+            <i class="my-auto fas fa-book fa-fw"></i>
+            <span class="my-auto ml-2">
+                Agenda
+            </span>
+        </a>
+        <a href="/perfil-pc" class="d-flex">
+            <i class=" my-auto fas fa-user fa-fw"></i>
+            <span class="my-auto ml-2">
+                Perfil
+            </span>
+        </a>
+    </div>
+
+    <span class="pt-3 pl-3" style="font-size:30px;cursor:pointer; position: fixed;" onclick="openNav()">&#9776;</span>
+
+    <div class="pagina" id="pagina">
+
+        <div class="px-5 pt-3">
+            <div class="titulo-pagina d-flex justify-content-center mb-2">
+                <h3 class="font-personalizada">PERFIL</h3>
+            </div>
+            <br>
+            <div class="conteudo">
+                <div class="nome">
+                    <p class="m-0"><strong>Nome</strong></p>
+                    <p class="m-0" id="name"></p>
+                </div>
+                <br>
+                <div class="telefone">
+                    <p class="m-0"><strong>Telefone</strong></p>
+                    <p class="m-0" id="telefone"></p>
+                </div>
+                <br>
+                <div class="email">
+                    <p class="m-0"><strong>Email</strong></p>
+                    <p class="m-0" id="email"></p>
+                </div>
+                <br>
+                <div class="endereco">
+                    <p class="m-0"><strong>Endereço</strong></p>
+                    <p class="m-0" id="street"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("pagina").css('margin-bottom', $(".navbar").height())
+    });
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("pagina").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("pagina").style.marginLeft = "0";
+    }
+</script>
+
+<!-- Js scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/app.js"></script>
+
+</html>
