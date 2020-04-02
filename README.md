@@ -1,6 +1,6 @@
-Name: Project Sercomp2019
+# Name: Project Sercomp2019
 
-Project developed for managing events for the State University of Paraiba Campos Patos.
+Project developed for managing events for the Universidade Estadual da Paraiba(UEPB) Campos Patos.
 
 Resume:
 Project used in Sercomp 2019 for desktop and mobile devices with the following functions
@@ -40,7 +40,7 @@ resources used:
 * nodemailer
 ________________________________________________________________________________________________________________________________
 
-Nome: Projeto Sercomp2019
+# Nome: Projeto Sercomp2019
 
 Projeto desenvolvido para gerenciamento de inscrições em eventos publicos para Universidade estaudal da Paraiba Campos Patos.
 
@@ -53,30 +53,30 @@ Gerencimento de Pagamentos;
 
 recursos ultilizados:
 
-*bcrypt-nodejs	
+* bcrypt-nodejs	
 
-*body-parser
+* body-parser
 
-*consign
+* consign
 
-*ejs
+* ejs
 
-*express
+* express
 
-*express-session
+* express-session
 
-*express-validator
+* express-validator
 
-*extend
+* extend
 
-*fs
+* fs
 
-*knex
+* knex
 
-*moment
+* moment
 
-*mysql"
+* mysql"
 
-*nexe
+* nexe
 
-*nodemailer
+* nodemailer
